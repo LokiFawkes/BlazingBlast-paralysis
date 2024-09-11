@@ -65,7 +65,7 @@ int main()
     {
         highest = std::max(highest, results[i]);
     }
-
+    cudaFree(results);
     std::cout << "My record is: " << (int)highest << ".\nIt took me " << totalTime << "ms.\n";
     return 0;
 }
